@@ -1,47 +1,69 @@
 # Django in Termux
-## Installing Django on Termux
-This guide will walk you through the process of installing Django on Termux, a terminal emulator for Android.
+This guide provides detailed steps for installing Django on Termux, a terminal emulator for Android.
 
-### Step 1: Update Termux Package List
-Run the following command to update the package list in Termux:
+## Table of Contents
+- Auto Install
+- Manual Process
+  - Step 1: Update Termux Package List
+  - Step 2: Install Python and Git
+  - Step 3: Install Django and Required Packages
+  - Step 4: Verify Installation
+  - Step 5: Create a Django Project
+  - Step 6: Run the Development Server
+- Why We Do Not Recommend Installing Django in a Virtual Environment
+- License
+- Uses
+- Contributing
+
+---
+
+### Auto Install
+To automatically install all required packages, execute the following command:
+```bash
+curl -s https://raw.githubusercontent.com/dev-bittu/django-in-termux/main/commands.txt | bash
+```
+
+### Manual Process
+#### Step 1: Update Termux Package List
+Ensure your package list is up to date with the following command:
 ```bash
 pkg update -y && pkg upgrade -y
 ```
 
-### Step 2: Install Python and Git
+#### Step 2: Install Python and Git
 Install Python and Git using the package manager pkg:
 ```bash
 pkg install python3 git -y
 ```
 
-### Step 3: Install Django and required packages
-Install Django using pip, the Python package manager:
+#### Step 3: Install Django and Required Packages
+1. Install Django using pip, the Python package manager:
 ```bash
 pip install django
 ```
-For image processing django needs pillow
+2. For image processing in Django, install the python-pillow package:
 ```bash
 pkg install python-pillow -y
 ```
-For date and time management, django needs tzdata
+3. To manage date and time effectively, Django requires tzdata:
 ```bash
 pip install tzdata
 ```
 
-### Step 4: Verify Installation
-Verify Django installation by checking the version:
+#### Step 4: Verify Installation
+Confirm the Django installation by checking its version:
 ```bash
 django-admin --version
 ```
 
-### Step 5: Create a Django Project
-Create a new Django project using the following command:
+#### Step 5: Create a Django Project
+Create a new Django project with the following command:
 ```bash
 django-admin startproject mysite
 ```
 
-### Step 6: Run the Development Server
-Navigate into your project directory:
+#### Step 6: Run the Development Server
+Move into your project directory:
 ```bash
 cd mysite
 ```
@@ -49,4 +71,22 @@ Start the Django development server:
 ```bash
 python manage.py runserver
 ```
-Visit http://127.0.0.1:8000 in your web browser to see your Django project running.
+Visit http://127.0.0.1:8000 in your web browser to view your Django project.
+
+## Why We Do Not Recommend Installing Django in a Virtual Environment
+When installing the Pillow package in Termux using pip, some devices encounter errors.
+As a workaround, we suggest using the python-pillow package instead of directly installing from pip.
+Furthermore, activating a virtual environment may cause Pillow to malfunction due to isolation from its necessary dependencies.
+Hence, we recommend installing Django globally to ensure its seamless functionality.
+
+---
+
+## License
+This project is licensed under the [MIT](LICENSE) License.
+  
+## Uses
+Feel free to use this guide for installing Django on Termux interactively.
+
+## Contributing
+Contributions are welcome!
+If you have any improvements or suggestions, please feel free to create a pull request.
