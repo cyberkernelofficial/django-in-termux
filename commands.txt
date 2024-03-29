@@ -1,5 +1,4 @@
 pkg update -y && pkg upgrade -y
 pkg install python3 git -y
-pkg install python-pillow
-
+pkg install python-pillow -y
 pip install django tzdata
