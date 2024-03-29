@@ -17,6 +17,10 @@ This guide provides detailed steps for installing Django on Termux, a terminal e
 
 ---
 
+## Video Tutorial
+For a visual guide on installing django in Termux, watch the YouTube video tutorial:
+[![How to install django in termux without pullow and cryptography error](http://img.youtube.com/vi/LYsJdeZMnBI/0.jpg)](http://www.youtube.com/watch?v=LYsJdeZMnBI "How to install django in termux without pullow and cryptography error")
+
 ### Auto Install
 To automatically install all required packages, execute the following command:
 ```bash
