@@ -20,7 +20,7 @@ This guide provides detailed steps for installing Django on Termux, a terminal e
 ### Auto Install
 To automatically install all required packages, execute the following command:
 ```bash
-curl -s https://raw.githubusercontent.com/dev-bittu/django-in-termux/main/commands.txt | bash
+curl -s https://raw.githubusercontent.com/cyberkernelofficial/django-in-termux/main/commands.txt | bash
 ```
 
 ### Manual Process
