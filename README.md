@@ -29,19 +29,19 @@ curl -s https://raw.githubusercontent.com/cyberkernelofficial/django-in-termux/m
 ```
 
 ### Manual Process
-#### Step 1: Update Termux Package List
+#### Update Termux Package List
 Ensure your package list is up to date with the following command:
 ```bash
 pkg update -y && pkg upgrade -y
 ```
 
-#### Step 2: Install Python and Git
+#### Install Python and Git
 Install Python and Git using the package manager pkg:
 ```bash
 pkg install python3 git -y
 ```
 
-#### Step 3: Install Django and Required Packages
+#### Install Django and Required Packages
 1. Install Django using pip, the Python package manager:
 ```bash
 pip install django
@@ -55,19 +55,19 @@ pkg install python-pillow -y
 pip install tzdata
 ```
 
-#### Step 4: Verify Installation
+#### Verify Installation
 Confirm the Django installation by checking its version:
 ```bash
 django-admin --version
 ```
 
-#### Step 5: Create a Django Project
+#### Create a Django Project
 Create a new Django project with the following command:
 ```bash
 django-admin startproject mysite
 ```
 
-#### Step 6: Run the Development Server
+#### Run the Development Server
 Move into your project directory:
 ```bash
 cd mysite
