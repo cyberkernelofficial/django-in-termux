@@ -2,18 +2,18 @@
 This guide provides detailed steps for installing Django on Termux, a terminal emulator for Android.
 
 ## Table of Contents
-- Auto Install
-- Manual Process
-  - Step 1: Update Termux Package List
-  - Step 2: Install Python and Git
-  - Step 3: Install Django and Required Packages
-  - Step 4: Verify Installation
-  - Step 5: Create a Django Project
-  - Step 6: Run the Development Server
-- Why We Do Not Recommend Installing Django in a Virtual Environment
-- License
-- Uses
-- Contributing
+- [Auto Install](#auto-install)
+- [Manual Process](#manual-process)
+  - Step 1: [Update Termux Package List](#update-termux-package-list)
+  - Step 2: [Install Python and Git](#install-python-and-git)
+  - Step 3: [Install Django and Required Packages](#install-django,-and-required-packages)
+  - Step 4: [Verify Installation](#verify-installation)
+  - Step 5: [Create a Django Project](#create-a-django-project)
+  - Step 6: [Run the Development Server](#run-the-development-server)
+- Question: [Why We Do Not Recommend Installing Django in a Virtual Environment](#why-we-do-not-recommend-installing-django-in-a-virtual-environment)
+- [License](#license)
+- [Uses](#uses)
+- [Contributing](#contributing)
 
 ---
 
