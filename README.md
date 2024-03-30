@@ -2,6 +2,7 @@
 This guide provides detailed steps for installing Django on Termux, a terminal emulator for Android.
 
 ## Table of Contents
+- [Video Tutorial](#video-tutorial)
 - [Auto Install](#auto-install)
 - [Manual Process](#manual-process)
   - Step 1: [Update Termux Package List](#update-termux-package-list)
